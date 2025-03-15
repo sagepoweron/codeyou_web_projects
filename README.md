@@ -1,3 +1,3 @@
-This project is a website listing some of the other projects that I have worked on.
+This is a website showcasing some of my favorite projects.
 
-I will use this website to showcase some of my favorite projects for others to see.
+It will list various projects that I have worked on such as video games and web sites.
