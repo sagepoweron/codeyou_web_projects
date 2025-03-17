@@ -1,0 +1,78 @@
+
+h1 {
+	border-bottom: 1px solid lightgray;
+}
+h1, h2 {
+	color: #54b3d6;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+.content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
+	flex-grow: 1;
+}
+
+.center
+{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+footer
+{
+	border-top: 1px solid darkgray;
+}
+
+
+.activePageButton
+{
+	border: 1px solid black;
+	text-decoration: none;
+	background-color: #54b3d6;
+	color: #ffffff;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 100px;
+}
+.inlineButton
+{
+	border: 1px solid black;
+	text-decoration: none;
+	box-shadow: inset 0 0 0 0 #54b3d6;
+	color: #54b3d6;
+	/*transition: color .5s ease-in-out, box-shadow .5s ease-in-out;*/
+	transition: all 1s;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 100px;
+}
+.inlineButton:hover
+{
+	box-shadow: inset 100px 0 0 0 #54b3d6;
+	color: white;
+}
+
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+/*@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}*/
