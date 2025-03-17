@@ -11,20 +11,27 @@
 <body>
 
     <nav class="center">
-        <a class="activePageButton" href="index.html">Home</a>
-        <a class="inlineButton" href="form.html">Form</a>
+        <a class="activePageButton" href="form.html">Back</a>
     </nav>
 
     <div class="content">
-	    <h1>Forms</h1>
+	    <h1>Results</h1>
 
         <!--<div>
             <button onClick="document.getElementById('test').src = 'somewhere'">Test Button</button>
         </div>-->
 
-        <div class="center">
-            Welcome! Please fill out a form on a page above!
+        <div id="results">
+
         </div>
+        <script>
+            const resultsList = document.getElementById("results")
+            new URLSearchParams(window.location.search).forEach((value, name) =>
+        {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement("br"))
+        })
+        </script>
         
     </div>
     

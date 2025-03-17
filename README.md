@@ -1,3 +1,1 @@
-This is a website showcasing some of my favorite projects.
-
-It will list various projects that I have worked on such as video games and web sites.
+This is a website for testing different forms and inputs.

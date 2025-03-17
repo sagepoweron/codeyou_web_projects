@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+<link rel="stylesheet" href="styles.css">
+<script src="javascript.js" defer></script>
+</head>
+
+
+<body>
+
+    <nav class="center">
+        <a class="inlineButton" href="index.html">Home</a>
+        <a class="activePageButton" href="form.html">Form</a>
+    </nav>
+
+    <div class="content">
+	    <h1>Form</h1>
+
+        <form action="results.html" method="get" enctype="multipart/form-data">
+            <div>
+                <label for="nameId">Name</label>
+                <input id="nameId" name="Name" type="text" value="User" required>
+            </div>
+            <div>
+                <label for="emailId">Email</label>
+                <input id="emailId" name="Email" type="email" placeholder="name@site">
+            </div>
+            <div>
+                <label for="phoneId">Phone</label>
+                <input id="phoneId" name="Phone" type="tel" placeholder="555-555-5555">
+            </div>
+            <div>
+                <label for="urlId">URL</label>
+                <input id="urlId" name="URL" type="url">
+            </div>
+            <div>
+                <label for="passwordId">Password</label>
+                <input id="passwordId" name="Password" type="password">
+            </div>
+            <div>
+                <label for="ageId">Age</label>
+                <input id="ageId" name="Age" type="number" min="0" max="200">
+            </div>
+            <div>
+                <label for="dateId">Date</label>
+                <input id="dateId" name="Date" type="date" min="1900-01-01">
+            </div>
+
+            <div class="group">
+                <div>Favorite Food</div>
+                <div>
+                    <label for="bananaId">Banana</label>
+                    <input id="bananaId" name="Banana" type="checkbox">
+                </div>
+                <div>
+                    <label for="appleId">Apple</label>
+                    <input id="appleId" name="Apple" type="checkbox">
+                </div>
+            </div>
+
+            <div class="group">
+                <div>Gender</div>
+                <div>
+                    <label for="maleId">Male</label>
+                    <input id="maleId" name="Gender" type="radio" value="Male">
+                </div>
+                <div>
+                    <label for="femaleId">Female</label>
+                    <input id="femaleId" name="Gender" type="radio" value="Female">
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="eyeColorId">Eye Color</label>
+                <select id="eyeColorId" name="Eye Color">
+                    <option value="None">None</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="notesId">Notes</label>
+                <textarea id="notesId" name="Notes"></textarea>
+            </div>
+
+            <div>
+                <label for="colorId">Color</label>
+                <input id="colorId" name="Color" type="color">
+            </div>
+
+            <div>
+                <label for="fileId">File</label>
+                <input id="fileId" name="File" type="file">
+            </div>
+
+            <input name="Hidden" type="hidden" value="Hidden Value">
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+    
+	
+
+    <footer class="center">
+        Site by J. Tate
+    </footer>
+
+</body>
+</html>
